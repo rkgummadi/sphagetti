@@ -1,0 +1,16 @@
+Cython>=0.29.21
+aiocache==0.10.0
+appdirs==1.4.3
+pydantic==0.15
+PyYAML==3.13
+python-dotenv==0.8.2
+requests==2.19.1
+setproctitle==1.1.10
+pytz==2018.5
+pycryptodomex==3.6.6
+pkcs7==0.1.2
+pymssql==2.1.5
+sqlalchemy>=1.2.14
+aiohttp-devtools>=0.13.1
+aiohttp-middlewares>=1.1.0
+envbash==1.2.0
