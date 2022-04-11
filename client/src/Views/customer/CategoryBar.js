@@ -4,7 +4,7 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.css"
 function CategoryBar() {
   //console.log("CategoryBar rendered");
     return (
-        <div className="catContainer" id="categoryBar">
+        <div className="catContainer" id="categoryBar" >
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
    

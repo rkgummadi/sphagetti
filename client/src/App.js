@@ -9,6 +9,7 @@ import MenuListItems from "./Views/MenuItems/MenuListItems";
 import ScheduleMenu from "./Views/ScheduleMenu/ScheduleMenu";
 import Menu  from "./Views/customer/Menu";
 
+
 //import Menu  from "./Views/test/Menu";
 
 var store = require("store");
@@ -107,7 +108,7 @@ const myReducer = (state = initialState, action) => {
 function App() {
   const [myState, dispatch] = useReducer(myReducer, initialState);
   const[loading,setIsLoading]=useState(true);
-  const[user,setUser]=useState('customer');
+  const[user,setUser]=useState('');
 
 
   const fetchData = async () => {
@@ -138,7 +139,7 @@ function App() {
     <itemContext.Provider value={{ state: myState, method: dispatch }}>
 
     <Router>
-      <Topbar />
+      {/* <Topbar /> */}
       <div className="container">
 
         {
@@ -149,7 +150,8 @@ function App() {
           <Route exact path="/">
             <Menu/>
           </Route>
-        
+
+       
         </Switch> :
 
 
@@ -179,7 +181,7 @@ function App() {
          
        
           <Route exact path="/menu">
-          <Sidebar/>
+          
             <Menu    />
           </Route>
         </Switch>

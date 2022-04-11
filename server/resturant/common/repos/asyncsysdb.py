@@ -16,7 +16,7 @@ class resturantDatabaseRepo:
 
     async def insert_schedule(self,scheduleData):
         
-        print('rkr',TableValuedParams('dbo.schedulemenu', [(g['CategoryID'],g['MenuID'],g['WeekId']) for g in scheduleData], ['CategoryID','MenuID', 'WeekId']))
+        #print('rkr',TableValuedParams('dbo.schedulemenu', [(g['CategoryID'],g['MenuID'],g['WeekId']) for g in scheduleData], ['CategoryID','MenuID', 'WeekId']))
         try:
             operation = prepare_exec('dbo.insertschedule', 
            
